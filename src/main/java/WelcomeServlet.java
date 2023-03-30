@@ -22,10 +22,12 @@ public class WelcomeServlet extends HttpServlet {
 
         else {
             String name = (String) session.getAttribute("name");
+            String email = (String) session.getAttribute("email");
 
-            out.println("<h1> Welcome "+name+"!</h1><br>");
+
+            out.println("<div align='center'><h1> Welcome "+name+"!</h1><br>");
             out.println("<h2><a href='ProfileServlet'>Profile</a></h2>");
-            out.println("<h2><a href='LogoutServlet'>Logout</a></h2>");
+            out.println("<h2><a href='LogoutServlet'>Logout</a></h2></div>");
         }
 
     }

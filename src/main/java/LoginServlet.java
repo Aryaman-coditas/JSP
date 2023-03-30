@@ -45,6 +45,7 @@ public class LoginServlet extends HttpServlet {
 
             if(count==1){
                 session.setAttribute("name",name);
+                session.setAttribute("email",email);
                 resp.sendRedirect("WelcomeServlet");
             }
             else {

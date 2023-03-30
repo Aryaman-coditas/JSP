@@ -8,7 +8,7 @@
 </head>
 <body>
 <div align="center">
-<form method="get" action="RegisterServlet">
+<form method="post" action="RegisterServlet" enctype="multipart/form-data">
   <fieldset>
     <h2>Registration Form</h2>
     <table>
@@ -35,10 +35,6 @@
       <tr>
         <td>Image</td>
         <td><input type="file" name="img"></td>
-      </tr>
-      <tr>
-        <td>Resume</td>
-        <td><input type="file" name="resume"></td>
       </tr>
       <tr>
         <td>Address</td>
